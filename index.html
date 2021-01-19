@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Webpack Project Template</title>    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="main.css" rel="stylesheet"></head>
+  <body data-spy="scroll" data-target="#navbar-top" data-offset="150">
+    <header>
+      <div class="container">      
+        <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light">  
+          <a class="navbar-brand" href="#"><span id="logo"><span>A</span>lexis</span></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation-menu-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>        
+          <div class="collapse navbar-collapse" id="navigation-menu-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about_us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#our_focus">Our Focus</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work_steps">Work Steps</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact_us">Contact</a></li>
+              </ul>
+          </div>
+        </nav>        
+      </div>
+    </header>
+    <main>
+      <section id="our_works">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="animated">We design things with love and passion.</h1>
+              <a class="animated" href="#">Our Works</a>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <ul>
+                <li class="animated">Fixed price projects</li>
+                <li class="animated">Receive on time</li>
+                <li class="animated">Satisfaction guranteed</li>
+              </ul>          
+            </div>
+          </div>
+          <script type="text/javascript">
+            //1
+            document.addEventListener("DOMContentLoaded", function(event) {
+              document.getElementsByClassName('toggle')[0].addEventListener('animationend', () => {
+                if(document.getElementsByClassName('toggle')[0].classList.contains('hide')) {
+                  document.getElementsByClassName('toggle')[0].style.display = 'none';
+                  document.getElementsByClassName('toggle')[0].classList.remove('hide');
+                }                
+              });
+            });
+          </script>
+          <button onclick="if(!document.getElementsByClassName('toggle')[0].classList.contains('visible')) {
+            document.getElementsByClassName('toggle')[0].classList.add('visible');
+            document.getElementsByClassName('toggle')[0].style.display = 'block';
+          }
+          else if(document.getElementsByClassName('toggle')[0].classList.contains('visible')) {
+            document.getElementsByClassName('toggle')[0].classList.remove('visible');
+            document.getElementsByClassName('toggle')[0].classList.add('hide');
+            //2
+            setTimeout(() => {
+              document.getElementsByClassName('toggle')[0].style.display = 'none';
+              document.getElementsByClassName('toggle')[0].classList.remove('hide');
+            }, 400);  
+          }">Toggle</button>
+          <div class="toggle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consequatur, odit sint amet mollitia eaque nihil veniam qui dolores maxime ipsam quibusdam deleniti suscipit atque animi cumque reiciendis delectus aperiam aliquam impedit, facilis vel quisquam cum earum! Ex, expedita fugiat ratione eveniet ullam voluptate qui doloremque pariatur nostrum quisquam. Nesciunt sequi, eligendi vero perspiciatis tenetur veniam maiores excepturi neque, blanditiis ratione quisquam corrupti ex, hic. Praesentium cupiditate maiores soluta, excepturi eaque possimus tenetur eius! Asperiores veritatis fuga nostrum, laudantium voluptate magni exercitationem sapiente, ipsum eum qui facere nobis vero quo sit, reprehenderit. Magni perferendis dolor quidem consequatur, illo culpa iusto necessitatibus mollitia, quaerat eos, aperiam. Architecto facere odit ratione ab, eaque accusamus id iste ipsum facilis magnam aut aspernatur, sapiente ducimus vitae blanditiis hic? Ex, quidem iste hic harum illo id iusto ea omnis earum eligendi neque beatae voluptatem iure sapiente alias voluptate voluptatibus necessitatibus a debitis nihil fugit dolorem? Aspernatur error facilis tenetur, quidem itaque sed officiis ea corrupti distinctio repudiandae aperiam nihil nam ab fugit magnam pariatur inventore impedit accusantium consequuntur at quos corporis, provident voluptatem. Maiores et, voluptatibus blanditiis possimus natus itaque praesentium voluptate perspiciatis, nulla odit doloribus ipsum expedita, aperiam ea nesciunt sapiente repellendus officiis molestias!
+          </div>             
+        </div>        
+      </section> 
+      <section id="about_us">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <figure class="animated">
+                <img class="img-responsive" width="555" height="700" src="assets/About_us.jpg" alt="About_us">
+              </figure>
+              <div class="about_us_description animated">
+                <h2>About Us.</h2>
+                <p>Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. </p>
+                <p>Monetization validation success. Seed round channels product 
+                management. Customer non-disclosure agreement strategy 
+                android growth hacking ramen buyer.</p>
+                <span class="border-red"></span>
+                <span class="border-green"></span>
+                <span class="border-violet"></span>
+                <span class="border-yellow"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our_focus" class="section">
+        <div class="container">
+          <div class="row section-header-row">
+            <div class="col">
+              <h2 class="section-header animated">Our Focus.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>
+          </div>
+          <div class="row our-focus-row">
+            <div class="col-md-6 col-lg-3">
+              <div class="our-focus-element red animated">
+                <i class="icon-newspaper"></i>
+                <h5 class="our-focus-element-title">Web Design</h5>
+                <p>Analytics release series A financing launch party 
+                interaction design android angel investor.</p>
+              </div>              
+            </div>
+            <div class="col-md-6 col-lg-3">
+             <div class="our-focus-element green animated">
+                <i class="icon-map-o"></i>
+                <h5 class="our-focus-element-title">UX Design</h5>
+                <p>Analytics release series A financing launch party 
+                interaction design android angel investor.</p>
+              </div> 
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="our-focus-element violet animated">
+                <i class="icon-picture"></i>
+                <h5 class="our-focus-element-title">Photography</h5>
+                <p>Analytics release series A financing launch party 
+                interaction design android angel investor.</p>
+              </div> 
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="our-focus-element yellow animated">
+                <i class="icon-mobile"></i>
+                <h5 class="our-focus-element-title">App Development</h5>
+                <p>Analytics release series A financing launch party 
+                interaction design android angel investor.</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>   
+      <section id="portfolio" class="section">
+        <div class="container">
+          <div class="row section-header-row">
+            <div class="col">
+              <h2 class="section-header animated">Portfolio.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="portfolio">
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item1.jpg" alt="Portfolio-item1">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <div class="rollover-title-inner">
+                          <span class="border-red"></span>
+                          <span class="border-green"></span>
+                          <span class="border-violet"></span>
+                          <span class="border-yellow"></span>
+                          <h5><a href="#">Project One</a></h5>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item2.jpg" alt="Portfolio-item2">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Two</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item3.jpg" alt="Portfolio-item3">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Three</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item4.jpg" alt="Portfolio-item4">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Four</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item5.jpg" alt="Portfolio-item5">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Five</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item6.jpg" alt="Portfolio-item6">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Six</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item7.jpg" alt="Portfolio-item7">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Seven</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item8.jpg" alt="Portfolio-item8">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Eight</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>                
+                <div class="portfolio-item animated">
+                  <div class="portfolio-item-inner">
+                    <figure>
+                      <img class="img-responsive" width="360" height="288" src="assets/Portfolio-item9.jpg" alt="Portfolio-item9">
+                    </figure>
+                    <div class="portfolio-item-rollover">
+                      <div class="rollover-body">
+                          <a href="#"><i class="icon-plus"></i></a>                           
+                        </div>
+                      <div class="rollover-title">
+                        <span class="border-red"></span>
+                        <span class="border-green"></span>
+                        <span class="border-violet"></span>
+                        <span class="border-yellow"></span>
+                        <h5><a href="#">Project Nine</a></h5>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="section">
+        <div class="container">
+          <div class="row section-header-row">
+            <div class="col">
+              <h2 class="section-header animated">Our Team.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="team team-with-details">
+                <div class="team-items">
+                  <div class="team-item team-item-red animated">
+                    <div class="team-item-inner">
+                      <figure class="team-member-cover">
+                        <a href="#"><img class="img-responsive" width="263" height="270" src="assets/Team-member-1.jpg" alt="Team-member-1"></a>   
+                      </figure>
+                      <div class="team-member-info">
+                        <h5 class="team-member-name"><a href="#">David Krämer</a></h5>
+                        <span class="team-member-position">Lead Developer</span>
+                      </div>
+                    </div>                  
+                  </div>
+                  <div class="team-item team-item-green animated">
+                    <div class="team-item-inner">
+                      <figure class="team-member-cover">
+                        <a href="#"><img class="img-responsive" width="263" height="270" src="assets/Team-member-2.jpg" alt="Team-member-2"></a>
+                      </figure>
+                      <div class="team-member-info">
+                        <h5 class="team-member-name"><a href="#">Michael Schmitt</a></h5>
+                        <span class="team-member-position">Founder & CEO</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-item team-item-violet animated">
+                    <div class="team-item-inner">
+                      <figure class="team-member-cover">
+                        <a href="#"><img class="img-responsive" width="263" height="270" src="assets/Team-member-3.jpg" alt="Team-member-3"></a>
+                      </figure>
+                      <div class="team-member-info">
+                        <h5 class="team-member-name"><a href="#">Anna Schröder</a></h5>
+                        <span class="team-member-position">Designer</span>
+                      </div>
+                    </div>
+                  </div>                
+                  <div class="team-item team-item-yellow animated">
+                    <div class="team-item-inner">
+                      <figure class="team-member-cover">
+                        <a href="#"><img class="img-responsive" width="263" height="270" src="assets/Team-member-4.png" alt="Team-member-4"></a>
+                      </figure>
+                      <div class="team-member-info">
+                        <h5 class="team-member-name"><a href="#">Jason Teichmann</a></h5>
+                        <span class="team-member-position">Consultant</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-details animated">
+                  <div class="team-detail animated">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 offset-md-1">
+                        <div class="team-detail-heading">                        
+                          <h5>About Bennet.</h5>
+                          <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                          bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                          facebook seed round A/B testing mass market. </p>
+                        </div>                      
+                      </div>
+                      <div class="col-md-4 col-lg-3 offset-lg-1 offset-2 offset-md-0 mt-sm-4">
+                        <div class="team-detail-social">
+                          <ul class="team-detail-social-list">
+                            <li class="icon-facebook-squared"><a href="#">Facebook</a></li>
+                            <li class="icon-twitter-squared"><a href="#">Twitter</a></li>
+                            <li class="icon-linkedin-squared"><a href="#">LinkedIn</a></li>
+                            <li class="icon-instagram"><a href="#">Instagram</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-detail animated hidden">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 offset-md-1">
+                        <div class="team-detail-heading">                        
+                          <h5>About Michael Schmitt.</h5>
+                          <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. </p>
+                        </div>                      
+                      </div>
+                      <div class="col-md-4 col-lg-3 offset-lg-1 offset-2 offset-md-0 mt-sm-4">
+                        <div class="team-detail-social">
+                          <ul class="team-detail-social-list">
+                            <li class="icon-facebook-squared"><a href="#">Facebook</a></li>
+                            <li class="icon-twitter-squared"><a href="#">Twitter</a></li>
+                            <li class="icon-linkedin-squared"><a href="#">LinkedIn</a></li>
+                            <li class="icon-instagram"><a href="#">Instagram</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-detail animated hidden">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 offset-md-1">
+                        <div class="team-detail-heading">                        
+                          <h5>About Anna Schröder.</h5>
+                          <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                          bandwidth twitter ownership success disruptive series. </p>
+                        </div>                      
+                      </div>
+                      <div class="col-md-4 col-lg-3 offset-lg-1 offset-2 offset-md-0 mt-sm-4">
+                        <div class="team-detail-social">
+                          <ul class="team-detail-social-list">
+                            <li class="icon-facebook-squared"><a href="#">Facebook</a></li>
+                            <li class="icon-twitter-squared"><a href="#">Twitter</a></li>
+                            <li class="icon-linkedin-squared"><a href="#">LinkedIn</a></li>
+                            <li class="icon-instagram"><a href="#">Instagram</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-detail animated hidden">
+                    <div class="row align-items-center">
+                      <div class="col-md-7 offset-md-1">
+                        <div class="team-detail-heading">                        
+                          <h5>About Jason Teichmann.</h5>
+                          <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                          bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                          facebook seed round A/B testing mass market. </p>
+                        </div>                      
+                      </div>
+                      <div class="col-md-4 col-lg-3 offset-lg-1 offset-2 offset-md-0 mt-sm-4">
+                        <div class="team-detail-social">
+                          <ul class="team-detail-social-list">
+                            <li class="icon-facebook-squared"><a href="#">Facebook</a></li>
+                            <li class="icon-twitter-squared"><a href="#">Twitter</a></li>
+                            <li class="icon-linkedin-squared"><a href="#">LinkedIn</a></li>
+                            <li class="icon-instagram"><a href="#">Instagram</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>   
+      </section>
+      <section id="stats">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="stats-counter counter-projects icon-dot-circled-red animated">
+                <div class="stats-counter-number" id="stats-counter-projects">                  
+                </div>
+                <h6 class="stats-counter-title">
+                  Projects Completed
+                </h6>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats-counter counter-clients icon-dot-circled-green animated">
+                <div class="stats-counter-number" id="stats-counter-clients">                  
+                </div>
+                <h6 class="stats-counter-title">
+                  Satisfied Clients
+                </h6>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats-counter counter-feedbacks icon-dot-circled-violet animated">
+                <div class="stats-counter-number" id="stats-counter-feedbacks">                  
+                </div>
+                <h6 class="stats-counter-title">
+                  Positive Feedbacks
+                </h6>                 
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats-counter counter-freebies icon-dot-circled-yellow animated">
+                <div class="stats-counter-number"  id="stats-counter-freebies">                  
+                </div>
+                <h6 class="stats-counter-title">
+                  Freebies Released
+                </h6>              
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+      <section id="work_steps" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Work Steps.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="work-steps-background animated">
+              <img class="img-responsive" src="assets/Work-step-1.png" width="556" height="300" alt="Work-step-1">
+              <img class="img-responsive" src="assets/Work-step-2.jpg" width="556" height="300" alt="Work-step-2">
+              <img class="img-responsive" src="assets/Work-step-3.jpg" width="556" height="300" alt="Work-step-3">
+              <img class="img-responsive" src="assets/Work-step-4.jpg" width="556" height="300" alt="Work-step-4">
+            </div>
+            <div class="col-lg-5 col-md-6 col-10 offset-1 offset-md-0 col-left">
+              <div class="work-step border-red animated">                
+                <h4 class="work-step-title">Project Understanding</h4>
+                <p>Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                accelerator.</p>
+              </div>              
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-5 col-md-6 col-10 offset-1 offset-md-0 ml-md-auto col-right">
+              <div class="work-step border-green animated">                
+                <h4 class="work-step-title">Research & Planning</h4>
+                <p>Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                accelerator.</p>
+              </div>              
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-5 col-md-6 col-10 offset-1 offset-md-0 col-left">
+              <div class="work-step border-violet animated">                
+                <h4 class="work-step-title">Wireframe & Design</h4>
+                <p>Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                accelerator.</p>
+              </div>              
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-5 col-md-6 col-10 offset-1 offset-md-0 ml-md-auto col-right">
+              <div class="work-step border-yellow animated">                
+                <h4 class="work-step-title">Development</h4>
+                <p>Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor 
+                accelerator.</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Pricing Table.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="pricing-table three-columns animated">
+                <div class="pricing-table-item border-green">
+                  <div class="pricing-table-item-inner">
+                    <h5 class="pricing-table-item-header">Starter</h5>
+                    <div class="pricing-table-item-price">
+                      <div class="pricing-table-item-price-inner">
+                        <span class="price"><span class="currency">$</span>125</span>
+                        <span class="period">Per Month</span>
+                      </div>                    
+                    </div>
+                    <div class="pricing-table-item-content">
+                      <p><strong>200GB</strong> Online Storage</p>
+                      <p><strong>20</strong> Files Per Day</p>
+                      <p><strong>2TB</strong> Monthly Bandwidth</p>
+                      <p class="icon-check">Secure Platform</p>
+                      <p class="icon-check">24/7 Customer Support</p>
+                      <p class="icon-check">Fast & Reliable</p>
+                    </div>
+                    <a href="#" class="pricing-table-item-button">Get Started</a>
+                  </div>                  
+                </div>
+                <div class="pricing-table-item border-red">
+                  <div class="pricing-table-item-inner">
+                    <h5 class="pricing-table-item-header">Ultimate</h5>
+                    <div class="pricing-table-item-price">
+                      <div class="pricing-table-item-price-inner">
+                        <span class="price"><span class="currency">$</span>195</span>
+                        <span class="period">Per Month</span>
+                      </div>                    
+                    </div>
+                    <div class="pricing-table-item-content">
+                      <p><strong>800GB</strong> Online Storage</p>
+                      <p><strong>Unlimited</strong> Files Per Day</p>
+                      <p><strong>10TB</strong> Monthly Bandwidth</p>
+                      <p class="icon-check">Secure Platform</p>
+                      <p class="icon-check">24/7 Customer Support</p>
+                      <p class="icon-check">Fast & Reliable</p>
+                    </div>
+                    <a href="#" class="pricing-table-item-button">Get Started</a>
+                  </div>                  
+                </div>
+                <div class="pricing-table-item border-violet">
+                  <div class="pricing-table-item-inner">
+                    <h5 class="pricing-table-item-header">Professional</h5>
+                    <div class="pricing-table-item-price">
+                      <div class="pricing-table-item-price-inner">
+                        <span class="price"><span class="currency">$</span>145</span>
+                        <span class="period">Per Month</span>
+                      </div>                    
+                    </div>
+                    <div class="pricing-table-item-content">
+                      <p><strong>200GB</strong> Online Storage</p>
+                      <p><strong>20</strong> Files Per Day</p>
+                      <p><strong>2TB</strong> Monthly Bandwidth</p>
+                      <p class="icon-check">Secure Platform</p>
+                      <p class="icon-check">24/7 Customer Support</p>
+                      <p class="icon-check">Fast & Reliable</p>
+                    </div>
+                    <a href="#" class="pricing-table-item-button">Get Started</a>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Testimonials.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>         
+          </div>
+          <div class="row">            
+            <div class="col">
+              <div class="testimonials-slider animated">
+                <div class="testimonials-slide">
+                  <figure>
+                    <img class="img-responsive" src="assets/Testimonial-img-1.jpg" width="384" height="399" alt="Testimonial-img-1">
+                  </figure>
+                  <div class="testimonials-content icon-quote">
+                    <p class="content">Deployment ownership non-disclosure agreement vesting period crowdfunding 
+                    success influencer partnership equity series A financing network effects user 
+                    experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                    <p class="name">Melina</p>
+                    <p class="full-name">Melina Albrecht</p>
+                    <p class="position">Founder, TingTong</p>
+                  </div>
+                </div>
+                <div class="testimonials-slide">
+                  <figure>
+                    <img class="img-responsive" src="assets/Testimonial-img-2.jpg" width="384" height="399" alt="Testimonial-img-2">
+                  </figure>
+                  <div class="testimonials-content icon-quote">
+                    <p class="content">Deployment ownership non-disclosure agreement vesting period crowdfunding 
+                    success influencer partnership equity series A financing network effects user 
+                    experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                    <p class="name">Melina</p>
+                    <p class="full-name">Melina Albrecht</p>
+                    <p class="position">Founder, TingTong</p>
+                  </div>
+                </div>
+                <div class="testimonials-slide">
+                  <figure>
+                    <img class="img-responsive" src="assets/Testimonial-img-3.jpg" width="384" height="399" alt="Testimonial-img-3">
+                  </figure>
+                  <div class="testimonials-content icon-quote">
+                    <p class="content">Deployment ownership non-disclosure agreement vesting period crowdfunding 
+                    success influencer partnership equity series A financing network effects user 
+                    experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                    <p class="name">Melina</p>
+                    <p class="full-name">Melina Albrecht</p>
+                    <p class="position">Founder, TingTong</p>
+                  </div>
+                </div>
+                <div class="testimonials-slide">
+                  <figure>
+                    <img class="img-responsive" src="assets/Testimonial-img-1.jpg" width="384" height="399" alt="Testimonial-img-4">
+                  </figure>
+                  <div class="testimonials-content icon-quote">
+                    <p class="content">Deployment ownership non-disclosure agreement vesting period crowdfunding 
+                    success influencer partnership equity series A financing network effects user 
+                    experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.</p>
+                    <p class="name">Melina</p>
+                    <p class="full-name">Melina Albrecht</p>
+                    <p class="position">Founder, TingTong</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="select_us" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Why Select Us?</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>         
+          </div>
+          <div class="row select-us-row">
+            <div class="col-md-4">
+              <div class="select-item red animated">
+                <h5 class="icon-chart"><span>Business<br> Growth</span></h5>
+                <p>Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="select-item green animated">
+                <h5 class="icon-params"><span>Unlimited<br> Revisions</span></h5>
+                <p>Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="select-item violet animated">
+                <h5 class="icon-link-ext"><span>Unlimited<br> Perfection</span></h5>
+                <p>Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="select-item yellow animated">
+                <h5 class="icon-desktop"><span>Smart<br> Experience</span></h5>
+                <p>Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="select-item red animated">
+                <h5 class="icon-calendar"><span>Strict<br> Deadline</span></h5>
+                <p>Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="select-item green animated">
+                <h5 class="icon-award"><span>Award-winning<br> Company</span></h5>
+                <p>Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="get-started animated">
+                <h4>Start your journy with us now</h4>
+                <a href="#">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Our Blog.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>         
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <article class="post-single red animated" id="post-1">
+                <figure>
+                  <img class="img-responsive" src="assets/Post-single-img.jpg" width="555" height="443" alt="Post-single-img.jpg">
+                  <div class="post-info">
+                    <a href="#" class="post-author"><span>Damian Schreiber</span></a>
+                    <span class="post-date">December 10, 2015</span>
+                  </div>                  
+                </figure>
+                <div class="post-content">
+                  <h5 class="post-title"><a href="#post-1">Facebook’s CNN livestream will test its place in the second screen era</a></h5>
+                  <p class="post-excerpt">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#post-1">Read Full Article</a></p>
+                </div>
+              </article>
+            </div> 
+            <div class="col-md-6">
+              <div class="blog">
+                <article class="post green animated" id="post-2">
+                  <div class="post-info">
+                    <a href="#" class="post-author"><span>Damian Schreiber</span></a>
+                    <span class="post-date">December 10, 2015</span>
+                  </div>
+                  <div class="post-content">
+                    <h5 class="post-title"><a href="#post-2">Google Street View adds virtual reality support</a></h5>
+                    <p class="post-excerpt">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#post-2">Read Full Article</a></p>
+                  </div>                
+                </article>
+                <article class="post violet animated" id="post-3">
+                  <div class="post-info">
+                    <a href="#" class="post-author"><span>Damian Schreiber</span></a>
+                    <span class="post-date">December 10, 2015</span>
+                  </div>
+                  <div class="post-content">
+                    <h5 class="post-title"><a href="#post-3">Google Street View adds virtual reality support</a></h5>
+                    <p class="post-excerpt">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#post-3">Read Full Article</a></p>
+                  </div>                
+                </article>
+                <article class="post yellow animated" id="post-4">
+                  <div class="post-info">
+                    <a href="#" class="post-author"><span>Damian Schreiber</span></a>
+                    <span class="post-date">December 10, 2015</span>
+                  </div>
+                  <div class="post-content">
+                    <h5 class="post-title"><a href="#post-4">Google Street View adds virtual reality support</a></h5>
+                    <p class="post-excerpt">Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#post-4">Read Full Article</a></p>
+                  </div>                
+                </article>
+              </div>              
+            </div> 
+          </div>
+        </div>
+      </section>
+      <section id="subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3 class="animated">Subscribe to Newsletter</h3>
+              <form class="animated" onsubmit="return false;">
+                <input type="email" name="subscribe" placeholder="Enter your email">
+                <button type="submit">Subscribe now</button>
+              </form>
+            </div>
+          </div>
+        </div>        
+      </section>
+      <section id="contact_us" class="section">
+        <div class="container">
+          <div class="row section-header-row">            
+            <div class="col">
+              <h2 class="section-header animated">Get in Touch.</h2>
+              <h5 class="section-subheader animated">We understand your requirement and provide quality works.</h5>
+            </div>         
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+              <form class="animated" onsubmit="return false;">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <input type="text" name="budget" placeholder="Project Budget">
+                <textarea placeholder="Your Message" rows="7"></textarea>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 red">
+            <div class="footer-col">
+              <a href="/" class="footer-logo"><span>A</span>lexis</a>
+            </div>
+          </div>
+          <div class="col-md-3 green">
+            <div class="footer-col">
+              <p class="footer-title">Alexis LLC.</p>
+              <p>4125 Brighton Circle Road <br>Little Falls, MN 56345</p>
+            </div>
+          </div>
+          <div class="col-md-3 violet">
+            <div class="footer-col">
+              <p class="footer-title">Alexis LLC UK.</p>
+              <p>81 Golden Knowes Road <br>FRESHFIELD   L37 6TP</p>
+            </div>
+          </div>
+          <div class="col-md-3 yellow">
+            <div class="footer-col">
+              <p class="footer-title">Follow Us.</p>
+              <p>
+                <a href="#"><i class="icon-facebook-squared"></i></a>
+                <a href="#"><i class="icon-twitter-squared"></i></a>
+                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="#"><i class="icon-gplus"></i></a>                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script type="text/javascript" src="build.js"></script></body>
+</html>
